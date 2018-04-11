@@ -1,0 +1,4 @@
+#!/bin/bash
+total=$((($1 * 65536) / 100))
+pacmd set-sink-volume 0 $total
+echo "Volume set: $1% ($total)"
